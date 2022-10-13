@@ -19,9 +19,12 @@ namespace OrderMenu
     /// </summary>
     public partial class Result : Window
     {
-        public Result()
+        
+        public Result(String Item1, String Item2, String Item3, int Quality1, int Quality2, int Quality3, int TotalPrice1, int TotalPrice2, int TotalPrice3)
         {
             InitializeComponent();
+            Result_lbl.Content = Item1 + Quality1.ToString()+TotalPrice1.ToString()+"\n"+Item2 + Quality2.ToString() + TotalPrice2.ToString() + "\n"+Item3 + Quality3.ToString() + TotalPrice3.ToString() + "\n";
         }
     }
+    
 }

@@ -13,5 +13,7 @@ namespace OrderMenu
     /// </summary>
     public partial class App : Application
     {
+        
     }
+    
 }
