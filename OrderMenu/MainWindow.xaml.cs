@@ -78,7 +78,7 @@ namespace OrderMenu
                     }
 
                     //this.Close();
-                    Result rwf = new Result("魯肉飯", "肉圓", "麵線", Item1, Item2, Item3, porkrice, porkball, noodlesoup);
+                    Result rwf = new Result("魯肉飯", "肉圓", "麵線", Item1, Item2, Item3, porkrice, porkball, noodlesoup, check1, check2, check3);
                     rwf.Show();
                 }
             }

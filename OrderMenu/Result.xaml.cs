@@ -20,10 +20,23 @@ namespace OrderMenu
     public partial class Result : Window
     {
         
-        public Result(String Item1, String Item2, String Item3, int Quality1, int Quality2, int Quality3, int TotalPrice1, int TotalPrice2, int TotalPrice3)
+        public Result(String Item1, String Item2, String Item3, int Quality1, int Quality2, int Quality3, int TotalPrice1, int TotalPrice2, int TotalPrice3,bool chk1,bool chk2, bool chk3)
         {
             InitializeComponent();
-            Result_lbl.Content = Item1 + Quality1.ToString()+TotalPrice1.ToString()+"\n"+Item2 + Quality2.ToString() + TotalPrice2.ToString() + "\n"+Item3 + Quality3.ToString() + TotalPrice3.ToString() + "\n";
+
+            if(chk1 == true & Quality1 != 0)
+            {
+                Result_lbl.Content += Item1 + Quality1.ToString()+"碗"+ TotalPrice1.ToString() + "\n";
+            }
+            if (chk2 == true & Quality2 != 0)
+            {
+                Result_lbl.Content += Item2 + Quality2.ToString() +"個"+ TotalPrice2.ToString() + "\n";
+            }
+            if (chk3 == true & Quality3 != 0)
+            {
+                Result_lbl.Content += Item3 + Quality3.ToString() +"碗"+ TotalPrice3.ToString() + "\n";
+            }
+
         }
     }
     
